@@ -7,21 +7,35 @@ body {
 	background: #eee;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
 	background: #bada55;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: relative;
 }
 
 .controls {
-	top: 2rem;
-	left: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
 }
 
 .control {
 	margin-right: 1rem;
+}
+
+.control:last-child {
+    margin-right: 0;
 }
 
 .control label {
@@ -45,11 +59,18 @@ main {
 	border-radius: .4rem;
 	border: 2px solid green;
 	box-shadow: 1px 1px 4px 2px #557668;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .count_button:active {
 	box-shadow: none ;
 	box-shadow: 1px 1px 1px 1px #557668;
+}
+
+.count_button:hover{
+	cursor: pointer;
 }
 
 .count_button .current_count {
